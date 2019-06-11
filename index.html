@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
-    <script type='text/javascript' > 
+    <script type='text/javascript' >
       var cipherText = '';
     </script>
     <script type="text/javascript">
@@ -40,23 +40,23 @@
         catch (err) {
           $('#validation').text('incorrect passphrase, please try again');
           $('#passphrase').show();
-        }        
+        }
         return false;
       }
     </script>
 
   </head>
-  <body>    
+  <body>
     <div id="passphrase" class="container">
       <br/>
-      <img src="https://www.jemstep.com/en/.resources/services/themes/jemstep/dist/assets/img/JemstepLogo.png"/>
+      <img src="./JemstepLogo.svg"/>
       <br/>
       <br/>
-      <form class="form-inline">      
+      <form class="form-inline">
         <div class="form-group">
           <label for="passphrase-input">Please enter passphrase</label>
-          <input type="password" class="form-control mx-sm-3" id="passphrase-input" placeholder="Passphrase">          
-        </div>              
+          <input type="password" class="form-control mx-sm-3" id="passphrase-input" placeholder="Passphrase">
+        </div>
         <button type="submit" class="btn btn-primary" onclick='return attemptDecrypt()'>Unlock</button>
       </form>
       <p style="color:red" id="validation"></p>
